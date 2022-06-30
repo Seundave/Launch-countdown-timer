@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width:100%;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(images/bg-stars.svg);
+    background-color: hsl(236, 21%, 26%);
+    margin: 0;
+}
+
+.title{
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.title > p{
+    font-family:'Poppins', sans-serif;
+    color:white;
+    font-size:20px;
+    text-align: center;
+    margin-top: 100px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+
+.counter{
+    max-width: 1250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:82px auto;
+    
+}
+
+.days,.hours,.minute,.second{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    
+    
+}
+
+.days-card,.hours-card,.minute-card,.second-card{ 
+    width: 100px;
+    height:100px; 
+    background-color: hsl(237, 18%, 59%);
+    border-radius: 5px;
+    margin:0 10px;
+    font-size: 50px;
+    color:hsl(345, 100%, 29%);
+    text-align: center;
+    line-height: 100px;
+    font-weight: bolder;
+}
+
+h2{
+    margin-top:15px;
+    color:rgb(158, 154, 154);
+    font-size: 11px;
+    
+    font-family:'Poppins', sans-serif ;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+
+.footer{
+    width:100%;
+    background-image: url(images/pattern-hills.svg);
+    position:absolute;
+    bottom: 0;
+}
+
+.social-media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:65px;
+}
+
+.facebook,.pinterest,.instagram{
+    margin-left: 7px;
+}
+
+@media only screen and (max-width: 400px) {
+    .title > p{
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+    .days-card,.hours-card,.minute-card,.second-card{
+        width:100%;
+        height:60px;
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .counter{
+        width:80%;
+        margin-top:170px;
+    }
+
+    .days,.hours,.minute,.second{
+        width:21%;
+        margin:3px calc(16% /8);
+        
+    }
+
+
+}
+
